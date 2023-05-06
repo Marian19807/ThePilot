@@ -5,6 +5,9 @@
 Munte::~Munte()
 {
 	m_Munti.clear();
+    while (m_Munti.size() != 0) {
+        delete m_Munti.at(0);
+    }
 }
 void Munte::adaugareMunteInaltime()
 {
