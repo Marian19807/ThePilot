@@ -18,9 +18,10 @@
 int main()
 {
    
-    Munte* Munti = new Munte;
-    // game loop
-    while (1) {
+   
+    
+   
+        Munte* Munti = new Munte;
         for (int i = 0; i < 8; i++)
         {
             Munti->adaugareMunteInaltime();
@@ -28,8 +29,9 @@ int main()
         }
 
         Munti->avisareIndex();
-    }
+        delete Munti;
+    
    
-    delete Munti;
+  
    
 }
