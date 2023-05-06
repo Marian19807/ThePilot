@@ -24,7 +24,7 @@ void Munte::adaugareMunteInaltime()
 
     m_Munti.push_back(avion);
 
-
+    
 
 }
 
@@ -38,12 +38,12 @@ void Munte::avisareIndex()
         std::cout << m_Munti[i]->getindex() << std::endl;
     }
 
-
+    m_Munti.clear();
 }
 
 int Munte::incrementareIndex()
 {
     int static index = 0;
-
+    if (index == 8)index = 0;
     return index++;
 }
